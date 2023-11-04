@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office List</title>
+       <!-- LINKING CSS FILE -->
+    <link rel="stylesheet" href="./postyle.css">
+    <!-- LINKING FONT FILE INTER & MONTSERRAT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body onload="getIpdetails()">
+    <header>
+         <nav>
+             <p id="navip">IP Address: <span>1234</span></p>
+             <div class="nav">
+                 <div>
+                    <p id="latip">Lat:</p>
+                    <p id="longip">Long:</p>
+                 </div>
+                 <div>
+                    <p id="cityip">City:</p>
+                    <p id="regionip">Region:</p>
+                 </div>
+                 <div>
+                    <p id="orgip">Organisation:</p>
+                    <p id="hostname">Hostname:</p>
+                 </div>
+             </div> 
+         </nav>
+    </header>
+
+    <main>
+         <section>
+             <div class="locationdiv">
+                <h1>Your Current Location</h1>
+                <div class="googlediv"></div>
+             </div>
+         </section>
+
+         <section>
+              <div class="userinformation">
+                  <h2>More Information About You</h2>
+                  <p id="tzoneip">Time Zone: </p>
+                  <p id="dtip">Date and Time: </p>
+                  <p id="pinip">Pincode: </p>
+                  <p id="postelnos">Message: </p>
+              </div>
+         </section>
+         <section>
+              <div class="maincontent">
+                   <h2>Post Offices Near You</h2>
+                   <div class="inputdiv">
+                
+                      <input onkeyup="findpo()" id="search" type="text" placeholder="Search By Name">
+                   </div>
+
+                   <div id="postofficelist">
+                       
+                   </div>
+                   
+              </div>
+         </section>
+    </main>
+    <!-- LINKING SCRIPT FILE -->
+    <script src="./script.js"></script>
+    <!-- LINKING GOOGLE MAPS FILE -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0No5bDMMGYqPqw6zsVph9Q8CULhWgH3E&callback=loadmaps"></script>
+</body>
+</html>

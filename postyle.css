@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background: #000;
+    color: white;
+    /* margin-right: 30px; */
+}
+
+/* POSTOFFICE NAV CSS STARTS HERE */
+nav{
+    width: 100vw;
+    margin: 20px;
+}
+nav>p{
+    margin-top: 20px;
+    color: rgba(184, 188, 204, 0.50);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+}
+#navip>span{
+    color: #B8BCCC;
+    font-size: 28px;
+    font-weight: 700;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.nav>div>p{
+    margin: 10px 0px;
+}
+.nav>div:first-child{
+    margin-right: 30vw;
+}
+.nav>div:last-child{
+    margin-top:20px
+}
+
+.nav>div>p{
+    color: rgba(184, 188, 204, 0.50);
+    font-family: 'Inter', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    text-align: left;
+}
+
+/* GOOGLE DIV CSS STARTS FROM HERE */
+.locationdiv{
+    width: 100vw;
+    background-color: #575A85;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+}
+.locationdiv>h1{
+    margin-right:8vw;
+    color: #B8BCCC;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;    
+    font-weight: 700;
+}
+.googlediv{
+    background-color: blanchedalmond;
+    width: 80vw;
+    height:80vh;
+    margin-top: 30px;
+    margin-inline: 8vw;
+}
+
+/* USER INFORMATION CSS STARTS HERE */
+.userinformation{
+    width: 100vw;
+    padding: 30px 20px;
+}
+.userinformation>h2{
+    color: #B8BCCC;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+.userinformation>p{
+    color: rgba(184, 188, 204, 0.50);
+    font-family: 'Inter', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 30px 0px;
+}
+
+
+/* POST OFFICE CSS STARTS FROM HERE */
+.maincontent{
+    width: 100vw;
+    margin-bottom: 80px;
+}
+.maincontent>h2{
+    color: #B8BCCC;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.inputdiv{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 90vw;
+    border-radius: 10px;
+    border: 3px solid #575A85;
+    padding-top: 10px;
+    margin-left: 4vw;
+}
+.inputdiv>img{
+    margin-bottom: 9px;
+    margin-left: 25px;
+    margin-right: 10px;
+}
+.inputdiv>input{
+    width: 90vw;
+    border: none;
+    padding: 12px;
+    background-color: transparent;
+}
+.inputdiv>input::placeholder{
+    color: #B8BCCC;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+#postofficelist{
+    width: 100vw;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.postoffice{
+    width: 45vw;
+    border-radius: 10px;
+    background: #575A85;
+    margin-top: 50px;
+    padding-top: 10px;
+    margin-right: 40px;
+}
+.postoffice>p{
+    color: #B8BCCC;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 20px 0px;
+    margin-left: 30px;
+}
+.postoffice>p>span{
+    font-size: 30px;
+    color: rgba(184, 188, 204, 0.50);
+}

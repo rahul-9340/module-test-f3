@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office</title>
+    <!-- LINKING CSS FILE -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- LINKING FONT FILE INTER & MONTSERRAT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- LINKING JS QUERY IP FILE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <main>
+        <section>
+             <div class="homepagediv">
+                  <div class="homediv1">
+                       <h1>Post Office Application.</h1>
+                       <p>This Application Allows you to extract information about<br>
+                         nearest Post Offices, based on your location.</p>
+                
+                       <svg xmlns="http://www.w3.org/2000/svg" width="482" height="413" viewBox="0 0 482 413" fill="none">
+                        <path d="M-8.18429e-05 206.385C-0.0718703 255.102 17.1653 302.262 48.6384 339.456C49.7813 340.813 50.9456 342.149 52.1314 343.477C66.0857 359.166 82.3407 372.648 100.341 383.461C104.47 385.939 108.689 388.275 112.999 390.467C113.435 390.688 113.878 390.91 114.313 391.124C114.835 391.388 115.364 391.645 115.892 391.902C126.798 397.239 138.158 401.593 149.837 404.914C151.051 405.257 152.268 405.59 153.487 405.914C168.85 409.978 184.632 412.252 200.518 412.691C201.347 412.712 202.161 412.727 202.947 412.741C203.226 412.748 203.497 412.755 203.769 412.755C204.661 412.762 205.547 412.769 206.44 412.769C223.181 412.782 239.861 410.76 256.114 406.749C257.743 406.349 259.365 405.928 260.979 405.485C269.483 403.164 277.827 400.295 285.959 396.894C290.245 395.109 294.455 393.183 298.588 391.117C299.524 390.646 300.46 390.174 301.381 389.689C301.774 389.496 302.16 389.289 302.546 389.089C324.577 377.464 344.333 361.967 360.87 343.341C362.013 342.063 363.135 340.763 364.242 339.456C394.586 303.528 481.506 250.127 481.506 199.423C481.506 131.238 379.807 77.7406 328.818 40.1629C327.647 39.2988 326.468 38.4418 325.275 37.6063C325.04 37.442 324.804 37.2778 324.568 37.1136C303.608 22.4352 280.081 11.8137 255.207 5.79877C253.793 5.44885 252.378 5.12035 250.95 4.81327C224.007 -1.07855 196.163 -1.56645 169.031 3.37786C167.609 3.64209 166.188 3.91346 164.773 4.20625C140.122 9.26125 116.61 18.8061 95.4124 32.3646C94.941 32.6645 94.4695 32.9644 93.9981 33.2786C93.048 33.8928 92.098 34.5212 91.1622 35.1568C63.0815 54.0301 40.0776 79.5215 24.1795 109.383C8.28131 139.244 -0.0226585 172.557 -8.18429e-05 206.385Z" fill="#575A85"/>
+                    </svg>
+
+                     
+
+                  </div>
+                  <div class="homediv2">
+                      <h1>Your Current IP Address is <br><span id="homeiptag"></span></h1>
+                      <a href="./postoffices.html" target="_blank"><button>Get Started</button></a>
+                  </div>
+             </div>
+        </section>
+    </main>
+    
+     <!-- LINKING SCRIPT FILE -->
+     <script src="./script.js"></script>
+     <script>
+         $.getJSON("https://api.ipify.org?format=json", function(data) {
+         
+         // Setting text of element P with id gfg
+         $("#homeiptag").html(data.ip);
+         localStorage.setItem('ip', data.ip);
+     })
+     </script>
+</body>
+</html>
